@@ -1,0 +1,156 @@
+/* footer */
+
+.footer {
+  background-color: $footer-header;
+  padding: 60px 0;
+}
+.footer__all {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  align-items: baseline;
+}
+.nav__logo__down {
+  margin-bottom: 20px;
+  padding: 0;
+  color: $body-hero-color;
+  margin: auto;
+}
+.footer__contacts {
+  margin: auto;
+  text-align: center;
+  font-style: inherit;
+}
+.header__address__down {
+  margin-bottom: 9px;
+  color: $body-hero-color;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.header__contacts__down {
+  justify-content: left;
+  padding: 0;
+  line-height: 1.71;
+}
+.footer__address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer__social {
+  margin-left: 70px;
+}
+.footer__title {
+  color: $body-hero-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+.icon-social__item__down {
+  width: 44px;
+  height: 44px;
+  background-color: $icons-bg-footer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.icon-social__item__down .icon-social__logo {
+  fill: $body-hero-color;
+}
+
+/* footer form */
+
+.footer__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  margin-left: auto;
+  align-items: flex-end;
+}
+.footer__input {
+  display: block;
+  cursor: pointer;
+}
+
+.footer__input-text {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $body-hero-color;
+  margin-bottom: 20px;
+}
+.footer__subsribtion {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  color: $body-hero-color;
+  background-color: inherit;
+  border: 1px solid $footer-subscribtion-input;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .footer__input:hover &,
+  .footer__input:focus & {
+    border: 1px solid $accent-color;
+  }
+}
+
+.footer__submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  border-radius: 4px;
+  border: none;
+  box-shadow: $submit-btn-shadow;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+  color: $body-hero-color;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+}
+
+.footer__send-icon {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}

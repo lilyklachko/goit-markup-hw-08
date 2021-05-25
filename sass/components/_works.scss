@@ -1,0 +1,42 @@
+/* works */
+
+.works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 0;
+}
+.works__title {
+  margin-bottom: 50px;
+}
+
+.works__list {
+  display: flex;
+}
+
+.work__list-container {
+  position: relative;
+
+  .works__list > :not(&:last-child) {
+    margin-right: 30px;
+  }
+}
+.works__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $works-bg;
+  height: 70px;
+  width: 100%;
+
+  color: $body-hero-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
