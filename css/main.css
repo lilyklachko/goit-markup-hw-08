@@ -922,13 +922,23 @@ ul li {
   margin-bottom: 20px;
   padding: 0;
   color: white;
-  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__logo__down {
+    margin: auto;
+  }
 }
 
 .footer__contacts {
-  margin: auto;
   text-align: center;
   font-style: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__contacts {
+    margin: auto;
+  }
 }
 
 .header__address__down {
