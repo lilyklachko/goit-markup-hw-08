@@ -37,6 +37,9 @@
     color: $body-hero-color;
     box-shadow: $buttons-shadow;
   }
+  @media screen and(max-width:779px) {
+    margin-bottom: 15px;
+  }
 }
 
 .buttons__list > :not(li:last-child) {
@@ -46,6 +49,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and(max-width:779px) {
+    justify-content: start;
+  }
 }
 
 .portfolio {
@@ -60,9 +67,19 @@
 
   margin-bottom: $margins-portfolio-cards;
   margin-right: $margins-portfolio-cards;
+
+  @media screen and(max-width:779px) {
+    flex-basis: calc(100% / 1 - #{$margins-portfolio-cards});
+    max-width: 100%;
+  }
+
+  @media screen and(min-width:780px) and(max-width:1200px) {
+    flex-basis: calc(100% / 2 - #{$margins-portfolio-cards});
+  }
 }
 .portfolio__list img {
   max-width: 100%;
+  width: 100%;
 }
 .portfolio__link {
   display: block;

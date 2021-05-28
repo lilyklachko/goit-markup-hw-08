@@ -14,17 +14,24 @@
   margin-bottom: 20px;
   padding: 0;
   color: $body-hero-color;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     margin: auto;
     margin-bottom: 20px;
   }
 }
-.footer__contacts {
-  @media screen and (max-width: 768px) {
-    margin: auto;
-    margin-bottom: 60px;
+.footer__tablet-mode {
+  @media screen and(max-width: 779px) {
+    display: block;
   }
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__contacts {
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
   font-style: inherit;
 }
 .header__address__down {
@@ -46,9 +53,12 @@
 }
 .footer__social {
   margin-left: 70px;
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:779px) {
     margin: 0 auto;
     margin-bottom: 60px;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
   }
 }
 .footer__title {
@@ -59,7 +69,7 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:1200px) {
     text-align: center;
   }
 }
@@ -88,6 +98,10 @@
   @media screen and (min-width: 1200px) {
     display: flex;
   }
+  @media screen and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+  }
   margin-left: auto;
   align-items: flex-end;
 }
@@ -105,14 +119,16 @@
   color: $body-hero-color;
   margin-bottom: 20px;
 
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:779px) {
     text-align: center;
   }
 }
 .footer__subsribtion {
   width: 358px;
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:1200px) {
     width: 100%;
+    max-width: 450px;
+    margin: auto;
     margin-bottom: 20px;
   }
   height: 50px;
@@ -155,9 +171,10 @@
   letter-spacing: 0.06em;
   color: $body-hero-color;
   margin-left: 12px;
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:1200px) {
     margin: auto;
   }
+
   cursor: pointer;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
